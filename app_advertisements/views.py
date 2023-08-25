@@ -12,6 +12,7 @@ def index(request):
 def top_sellers(request):
     return render(request, 'top-sellers.html')
 
+
 def advertisement_post(request):
     if request.method == "POST":
         form = AdvertisementForm(request.POST, request.FILES)
